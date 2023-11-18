@@ -1,0 +1,154 @@
+/* Root Variables */
+:root{
+    --primary-color: #E65A4C;
+    --secondary-color: #FF6B6B;
+    --secondary-light: #FF8A80;
+   
+    --extra-grey: #C6BEB8;
+    --shade-one: #0005; 
+    --shade-two: #5550;
+    --shade-three: #101010;
+    --shade-four: #333333;
+    --article-bkgd-color: #C2C2C2;
+    --font-stack: "Open Sans", sans-serif;
+
+        /* Heights */
+        --banner-base-height: 50vh;
+        --banner-large-height: 75vh;
+    
+    
+        /* Verticle align */
+        --banner-vertical-align: center;
+    
+    
+        /* Horizontal align */
+        --banner-hor-align: flex-start;
+      
+    
+        /* Text align */
+        --text-align: left;
+
+        /* small photo */
+        --small-img-size: 35vh;
+
+        /* font scales major third*/
+        --scale-xl: 2.441rem;
+        --scale-large: 1.953rem;
+        --scale-med: 1.563rem;
+        --scale-small: 1.25rem;
+
+}
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set core root defaults */
+html {
+  line-height: 1.5;
+  font-family: var(--font-stack);
+  font-size: 1.2rem;
+  
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+}
+
+/* Update default margin */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+ul,
+ol,
+dl,
+dd {
+  margin: 0 0 1.5rem;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration-skip-ink: auto;
+  color: white;
+}
+
+a:hover,
+a:focus-visible {
+  color: #D96666;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+svg {
+  fill: currentColor;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---------- Containers ---------- */
+
+.container {
+  width: min(65em, 100%);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.container--text {
+  width: min(45em, 100%);
+}
