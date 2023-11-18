@@ -1,8 +1,9 @@
 /* Root Variables */
 :root{
-    --primary-color: #E65A4C;
-    --secondary-color: #FF6B6B;
-    --secondary-light: #FF8A80;
+    --primary-color: #da7531;
+    --secondary-color: rgb(254, 158, 103);
+    --secondary-light: #fad6a9;
+    --darkest-color: #da6931;
    
     --extra-grey: #C6BEB8;
     --shade-one: #0005; 
@@ -65,6 +66,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   margin: 0;
+  
 }
 
 /* Update default margin */
@@ -189,11 +191,14 @@ main {
 .navbar{
     flex-direction: column;
     background: linear-gradient(to left, var(--shade-one), var(--shade-two)) ;
+    background-image:linear-gradient(to bottom, #0009, #0009);
   }
   
    .navbar .container{
     padding: 0;
-    gap: 1.5rem;   
+    gap: 1.5rem; 
+    display: flex;
+    align-items: center;  
   }
   
   
@@ -231,8 +236,8 @@ main {
   
   .nav-list li:hover,
   .nav-list li:focus{
-     
-     background-color: var(--secondary-color);
+    transform: scale(1.1);
+    transition: transform 0.3s;
      
   }
   
@@ -263,7 +268,7 @@ main {
     
         display: flex;
         flex-direction: row;
-        border-top: 0.5rem solid var(--secondary-color);
+        border-top: 0.5rem solid var(--darkest-color);
        
     }
     
@@ -485,7 +490,7 @@ main {
 .footer{
     background: linear-gradient(to top, var(--shade-one), var(--shade-four)) ;
       color: white;
-      border-bottom: 0.5rem solid var(--secondary-color);
+      border-bottom: 0.5rem solid var(--darkest-color);
     }
   
   
@@ -601,7 +606,7 @@ main {
   
     .btn--secondary{
       color: black;
-      background: var(--secondary-color);
+      background: var(--primary-color);
       border: none;
       font-size: 1.2rem;
   }
@@ -619,7 +624,7 @@ main {
   /* btn code from cards */
   .btn-card{
     color: white;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     border: none;
     font-size: 1.2rem;
     
