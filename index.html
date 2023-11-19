@@ -9,12 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@400;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <title>Kieran's Portfolio</title>
 </head>
-<body>
+<body id="page">
+
+    <ul class="skip-links">
+        <li>
+          <a class="skip-links__link" href="#nav">Skip to main navigation</a>
+        </li>
+        <li>
+          <a class="skip-links__link" href="#main">Skip to main content</a>
+        </li>
+       
+     </ul>
      
     <div class="video-container">
         <video autoplay muted loop>
             <source src="../content/Ink-48691.mp4" type="video/mp4">
-            Your browser does not support the video tag.
+            
         </video>
     </div>
 
@@ -35,9 +45,9 @@
       </nav>
 
 
-      <main>
-        <main>
-            <section class="banner banner--center">
+    
+        <main id="main">
+            <section class="banner banner--center" tabindex="0">
                    <div class="container">
                        <header class="banner__content">
                             <img class="banner__img" src="./content/frasr-face-darker.png" alt="kierans face">
@@ -49,7 +59,7 @@
                    </div>
              </section>
 
-             <section class="card-content">
+             <section id="cards" class="card-content" tabindex="0">
                 <div class="container">
                     <div class="card">
                         <div class="card__img">
@@ -60,7 +70,7 @@
                                 <h2 class="card-content__title">html 5</h2>
                                 <p class="card-content__text"></p>
                             </div>        
-                            <a class="btn btn-card" href="#">Learn More</a>
+                            <a class="btn btn-card" aria-label="learn more about my HTML experience" href="#">Learn More</a>
                         </div>
                     </div>
               
@@ -74,7 +84,7 @@
                                 <h2 class="card-content__title">CSS</h2>
                                 <p class="card-content__text"></p>
                             </div>
-                            <a class="btn btn-card" href="#">Learn More</a>
+                            <a class="btn btn-card" aria-label="learn more about my css experience" href="#">Learn More</a>
                         </div>
                     </div>
         
@@ -87,7 +97,7 @@
                                 <h2 class="card-content__title">Javascript</h2>
                                 <p class="card-content__text"></p>
                             </div>
-                            <a class="btn btn-card" href="#">Learn More</a>
+                            <a class="btn btn-card" aria-label="learn more about my JS experience" href="#">Learn More</a>
                         </div>
                     </div>
 
@@ -100,7 +110,7 @@
                                 <h2 class="card-content__title">GitHub</h2>
                                 <p class="card-content__text"></p>
                             </div>
-                            <a class="btn btn-card" href="#">Learn More</a>
+                            <a class="btn btn-card" aria-label="learn more about my GitHub experience" href="#">Learn More</a>
                         </div>
                     </div>
 
@@ -113,7 +123,7 @@
                                 <h2 class="card-content__title">Gimp</h2>
                                 <p class="card-content__text"></p>
                             </div>
-                            <a class="btn btn-card" href="#">Learn More</a>
+                            <a class="btn btn-card" aria-label="learn more about my GIMP experience" href="#">Learn More</a>
                         </div>
                     </div>
 
@@ -126,7 +136,7 @@
                                 <h2 class="card-content__title">Adobe Illustrator</h2>
                                 <p class="card-content__text"></p>
                             </div>
-                            <a class="btn btn-card" href="#">Learn More</a>
+                            <a class="btn btn-card" aria-label="learn more about my adobe illustrator experience" href="#">Learn More</a>
                         </div>
                     </div>
 
@@ -139,7 +149,7 @@
                                 <h2 class="card-content__title">Adobe XD</h2>
                                 <p class="card-content__text"></p>
                             </div>
-                            <a class="btn btn-card" href="#">Learn More</a>
+                            <a class="btn btn-card" aria-label="learn more about my adobe Xd experience" href="#">Learn More</a>
                         </div>
                     </div>
                
@@ -152,7 +162,7 @@
       <footer class="footer">
         <div class="container">
             <a class="footer__logo" href="/">
-                <img src="./content/white-SIGNATURE.png" alt="adventure logo" class="footer__icon">
+                <img src="./content/white-SIGNATURE.png" alt="signature logo" class="footer__icon">
                 <span class="span__title"></span>
             </a>
     
@@ -176,7 +186,7 @@
         </div>
     </footer>
 
-
+    <a href="#page" class="to-top">To Top</a>
     
 
     <script src="./js/main.js"></script>

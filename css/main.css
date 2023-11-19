@@ -181,6 +181,60 @@ main {
     object-fit: cover;
   }
 
+/* <----- Skip Links -------------------------------> */
+
+.skip-links{
+    padding: 0;
+    margin:0;
+    list-style: none;
+  
+  }
+  
+  .skip-links__link {
+      position: absolute;
+      top: -10rem;
+      left: 0.5em;
+      display: inline-block;
+      padding: 0.55em 1.5em 0.5em;
+      background-color: var(--color-secondary);
+      color: white;
+      border-radius: 0.25em;
+      text-decoration: none;
+      z-index: 10000000;
+  } 
+  
+  .skip-links__link:focus {
+     top: 1rem;
+     color: white;
+  }
+  
+  /* to top */
+  
+  .to-top {
+    position: fixed;
+    bottom: -0.5rem;
+    right: 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.5rem 0.5rem 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    text-decoration: none;
+    box-shadow: 0 0 0.5rem #0002;
+    translate: 0 100%;
+  
+  }
+  
+  .to-top.visible {
+     translate: 0;
+  }
+  
+  .to-top:is(:hover, :focus-visible) {
+    translate: 0;
+    color: white;
+    bottom: 0;
+  }
+  
+
 
 
 /* <----- NAVBAR -------------------------------> */
