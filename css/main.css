@@ -282,11 +282,12 @@ main {
   .nav-list li::after {
     content: '';
     position: absolute;
-    width: 5%;
-    height: 0.125rem;
+    width: 10%;
+    height: 0.17rem;
+    border-radius: 0.125rem;
     transition: background-color 0.3s ease; 
     top: 50%;
-    left: 35%;
+    left: 25%;
   }
   
 
@@ -388,9 +389,9 @@ main {
     }
 
     .nav-list li::after {
-        top: 50%;
-        left: 0%;
-        width: 20%;
+        top: 75%;
+        left: 26%;
+        width: 50%;
       }
     
   }
