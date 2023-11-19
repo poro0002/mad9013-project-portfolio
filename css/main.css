@@ -1,7 +1,9 @@
 /* Root Variables */
 :root{
+
+  /* colors */
     --primary-color: #da7531;
-    --secondary-color: rgb(254, 158, 103);
+    --secondary-color: #FE9E67;
     --secondary-light: #fad6a9;
     --darkest-color: #da6931;
    
@@ -251,9 +253,9 @@ main {
 
 .navbar{
     flex-direction: column;
-    background: linear-gradient(to left, var(--shade-one), var(--shade-two)) ;
-    background-image:linear-gradient(to bottom, #0009, #0009);
+    background: linear-gradient(to bottom, var(--shade-four), var(--shade-one) ) ;
     overflow: hidden;
+    /* box-shadow: var(--white-box-shadow); */
   }
   
    .navbar .container{
@@ -323,7 +325,7 @@ main {
      width: 8em;
   }
   
-  /* web media queries */   
+  /* Web Media Queries */   
 
 
   @media only screen and (min-width: 45em){
@@ -363,7 +365,7 @@ main {
 /* <----- BANNER -------------------------------> */
 
 .banner {
-    background-image:linear-gradient(to bottom, #0009, #0009);
+    background: linear-gradient(to top, var(--shade-three), var(--shade-one) ) ;
     background-size: cover; 
     background-position: bottom;
     
@@ -392,8 +394,26 @@ main {
     font-size: 1.8rem;
     
   }
-  
-  
+
+
+  .banner__img {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards ;
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        0% {
+            opacity: 0;
+        }
+    }
+    
+
   
   .banner__para{
     color:white;
@@ -425,6 +445,9 @@ main {
     --text-align: right;
     
   }
+
+
+  /* banner media queries */
   
   @media only screen and (min-width: 45em){
     .banner__content{
@@ -433,19 +456,7 @@ main {
     }
   }
 
-    .banner__img {
-        opacity: 0;
-        animation: fadeIn 2s ease-in-out forwards;
-    }
-
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
+  
 
   /* <----- CARDS -------------------------------> */
 
@@ -455,7 +466,7 @@ main {
 .card-content{
     padding-top: 3rem;
     padding-bottom: 3rem;
-    background: linear-gradient(to left, var(--shade-one), var(--shade-four)) ;
+    background: linear-gradient(to bottom, var(--shade-three), var(--shade-one) ) ;
   }
       
   .card-content .container{
@@ -507,7 +518,6 @@ main {
   
   
   
-  
   .card-btn{
       justify-self: flex-end;
   }
@@ -522,6 +532,30 @@ main {
       border-top-right-radius: 1rem;
       border-top-left-radius: 1rem;
   }
+
+
+  /* note, make sure to get rid of the previous hover scale effect if you run with this animation */
+    .btn-card {
+        animation: pulse 3s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            
+        }
+        50% {
+            transform: scale(1.05);
+            ;
+        }
+        100% {
+            transform: scale(1);
+            
+        }
+    }
+
+
+
   
   /* Card media queries */
   
@@ -566,7 +600,7 @@ main {
   /* <----- FOOTER -------------------------------> */
 
 .footer{
-    background: linear-gradient(to top, var(--shade-one), var(--shade-four)) ;
+      background: linear-gradient(to top, var(--shade-four), var(--shade-one) ) ;
       color: white;
       border-bottom: 0.5rem solid var(--darkest-color);
     }
