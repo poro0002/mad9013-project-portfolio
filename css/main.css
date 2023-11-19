@@ -271,9 +271,37 @@ main {
     margin: 0;
     padding: 0
   }
+
+   /* nav li hover animation----------------------------- */
+
+  .nav-list li {
+    position: relative;
+  }
+  
+
+  .nav-list li::after {
+    content: '';
+    position: absolute;
+    width: 5%;
+    height: 0.125rem;
+    transition: background-color 0.3s ease; 
+    top: 50%;
+    left: 35%;
+  }
+  
+
   
   
+  .nav-list li:hover::after {
+    /* background-image: url("../content/li_arrow2.png") if you want to use a hover image; 
+    background-size: cover; 
+    background-position: center; */
+    background-color: #fff;
+  }
   
+    /* nav li hover animation ----------------------------- */
+  
+
   .logo-head{
     margin: 1.5rem;
   }
@@ -358,6 +386,12 @@ main {
         flex-direction: row;
         margin: 0 ;  
     }
+
+    .nav-list li::after {
+        top: 50%;
+        left: 0%;
+        width: 20%;
+      }
     
   }
 
@@ -386,6 +420,7 @@ main {
   .banner__content{
     width: min(35em, 100%);
     margin: 1rem;
+    
   }
   
   
@@ -412,6 +447,7 @@ main {
             opacity: 0;
         }
     }
+
     
 
   
