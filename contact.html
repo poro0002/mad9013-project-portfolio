@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@400;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Contact Me</title>
+    
+</head>
+<body id="page">
+    <ul class="skip-links">
+        <li>
+          <a class="skip-links__link" href="#nav">Skip to main navigation</a>
+        </li>
+        <li>
+          <a class="skip-links__link" href="#main">Skip to main content</a>
+        </li>
+       
+     </ul>
+     
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="./content/Ink-48691.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+
+    <nav class="navbar">
+        <div class="container">
+            
+            <header class="logo-head-div">
+                <a class="nav-logo" href="index.html"><img src="./content/white-SIGNATURE.png" alt="adventure-logo"></a>
+            </header>
+
+          <ul class="nav-list">
+                  <li><a class="link" href="#about-section">About</a></li>
+                  <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+                  <li><a class="link" href="./contact.html">Contact</a></li>
+                  
+          </ul>
+        </div>
+      </nav>
+   <main id="main">
+    <section class="sign-up">
+        <div class="container container--text">
+         <div class="sign-up__wrap">
+              
+            <form action="#" class="sign-up__form">
+                <div class="form-grid">
+                  <fieldset>
+
+                    <!-- title -->
+                    <legend>
+                        <h1 class="sign-up__title">Contact Us</h1>
+                    </legend>
+                
+
+                    <!-- Name -->
+                    <div class="form-unit  full">
+                        <label class="full-width-label" for="fName">Full Name*</label>
+                        <input 
+                            type="text" 
+                            id="fName" 
+                            name="fName" 
+                            required
+                            >
+                    </div>
+
+                    <!-- Email & Phone (needs media query) *************** -->
+                    <div class="form-unit double">  
+                        <label class="full-width-label" for="email">Email*  <input  
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required
+                            >
+                        </label>
+
+                        <label class="full-width-label" for="tel">Phone*  <input 
+                            type="tel" 
+                            id="tel" 
+                            name="tel" 
+                            required
+                            >
+                        </label>
+                    
+                    
+                    </div>
+
+                    <!-- Preferred Contact Method -->
+                    <div class="form-unit"> <!-- radio grid here -->
+                        <label class="full-width-label" for="contact">Preferred Contact Method</label>
+                         <div class="form-unit__row">
+
+                            <input 
+                                type="radio" 
+                                id="email-radio" 
+                                name="contact"
+                                >
+                            <label for="contact">Email</label>
+
+                            <input 
+                                type="radio" 
+                                id="tel-radio" 
+                                name="contact"
+                                >
+                            <label for="contact">Phone</label>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Subjects -->
+                    <div class="form-unit full">
+                        <label class="full-width-label" for="subject">Subject*</label>
+                            <select id="subject" name="subject">
+                                <option value="" selected disabled>Select One Below</option>
+                                <option value="subject1">Sales</option>
+                                <option value="subject2">Pricing</option>
+                                <option value="subject3">Support</option>
+                                <option value="subject4">Careers</option>
+                            </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="form-unit full">
+                        <label class="full-width-label" for="message">Message*</label>
+                        <textarea 
+                            placeholder="Write a message...."
+                            id="message" 
+                            name="message" 
+                            rows="4" 
+                            cols="45" 
+                            required
+                            >
+                    </textarea>
+                    </div>
+
+                    <!-- Terms of Service -->
+                    <div class="form-unit  full">
+                        <div class="form-unit__row">
+                        <input 
+                            class="checkbox" 
+                            type="checkbox" 
+                            required
+                            >
+                        <p> I Consent to the <a href="#" class="terms-link">Terms Of Service</a></p>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-unit full">
+                        <input  
+                            type="submit" 
+                            class="form-btn" 
+                            value="Submit">
+                    </div>
+                </fieldset>
+
+            </form>
+
+         </div>
+      </div>
+    </section>
+</main> 
+
+    <footer class="footer">
+        <div class="container">
+            <a class="footer__logo" href="/">
+                <img src="./content/white-SIGNATURE.png" alt="signature logo" class="footer__icon">
+            </a>
+    
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li><a class="footer__link" href="#about-section">About</a></li>
+                    <li><a class="footer__link" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="footer__link" href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer-small-links">
+                <small class="footer__copyright">
+                    &copy; 2023 Kieran Poropat
+                </small>
+              <div class="footer__copyright2">
+                <small><a href="#"><img class="small-media-logo" src="./content/github-white48.png" alt="github logo"></a></small>
+                <small><a href="#"><img class="small-media-logo" src="./content/In-White-48.png" alt="linkedin logo"></a></small>
+              </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <a href="#page" class="to-top">To Top</a>
+ 
+</body>
+</html>
