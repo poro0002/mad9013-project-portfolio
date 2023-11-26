@@ -541,6 +541,16 @@ main {
    .skills-header__h2 {
        font-size: 2.2rem;
        color: white;
+       border-bottom: 0.125rem solid white ;
+       
+   }
+
+   .skill .card__info .card__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
    }
    
 
@@ -548,13 +558,20 @@ main {
    .skill{
      display: flex;
      flex-direction: column;
+     justify-content: center;
+     align-items: center;
      /* flex: 1; */
    }
 
    .skill .card__img {
        width: 50%;
-
+       
    }
+
+   .skill .card__img img {
+    padding: 1rem;
+     
+}
 
 
 
@@ -567,6 +584,16 @@ main {
         .skill .card__img {
              width: 20%;
 
+        }
+
+        .skill .card__img img {
+            padding: 3rem;
+        }
+
+        .skill .card__info .card__text-box{
+            
+            align-items: flex-start;
+            text-align: left;
         }
    }
 
@@ -677,6 +704,12 @@ main {
       
       transform: scale(1.1);
       transition: transform 0.3s;
+    }
+
+    /* alt bkgd for contact page */
+
+    .alt-fade-bkgd {
+        background: linear-gradient(to bottom, var(--shade-three), var(--shade-one) )
     }
 
 
@@ -907,7 +940,7 @@ main {
     display: flex;
     align-items: center;
     padding: 3rem 0;
-
+    background: linear-gradient(to top, var(--shade-three), var(--shade-one) )
 }
 
 .sign-up__wrap{
