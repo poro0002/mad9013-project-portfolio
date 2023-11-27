@@ -43,8 +43,10 @@
           </ul>
         </div>
       </nav>
+
    <main id="main">
-    <section class="sign-up">
+    
+    <section id="sign-up" class="sign-up" tabindex="0">
         <div class="container container--text">
          <div class="sign-up__wrap">
               
@@ -66,6 +68,7 @@
                             id="fName" 
                             name="fName" 
                             required
+                            aria-label="full name input"
                             >
                     </div>
 
@@ -76,6 +79,7 @@
                             id="email" 
                             name="email" 
                             required
+                            aria-label="email input"
                             >
                         </label>
 
@@ -84,6 +88,7 @@
                             id="tel" 
                             name="tel" 
                             required
+                            aria-label="phone input"
                             >
                         </label>
                     
@@ -99,6 +104,7 @@
                                 type="radio" 
                                 id="email-radio" 
                                 name="contact"
+                                aria-label="email radio checkbox"
                                 >
                             <label for="contact">Email</label>
 
@@ -106,6 +112,7 @@
                                 type="radio" 
                                 id="tel-radio" 
                                 name="contact"
+                                aria-label="phone radio checkbox"
                                 >
                             <label for="contact">Phone</label>
                             
@@ -133,6 +140,7 @@
                             rows="4" 
                             cols="45" 
                             required
+                            aria-label="quick message input"
                             >
                     </textarea>
                     </div>
