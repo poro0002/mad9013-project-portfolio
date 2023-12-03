@@ -23,12 +23,12 @@
      
     <div class="video-container">
         <video autoplay muted loop>
-            <source src="./content/Ink-48691.mp4" type="video/mp4">
+            <source src="./content/Ink-48691.mp4" aria-label="background video of ink being poured into darkness" alt="background video of ink being poured into darkness" type="video/mp4">
             
         </video>
     </div>
 
-    <nav class="navbar">
+    <nav id="nav" class="navbar">
         <div class="container">
             
             <header class="logo-head-div">
@@ -56,7 +56,7 @@
 
                     <!-- title -->
                     <legend>
-                        <h1 class="sign-up__title">Contact Us</h1>
+                        <h1 class="sign-up__title">Contact Me</h1>
                     </legend>
                 
 
@@ -67,13 +67,14 @@
                             type="text" 
                             id="fName" 
                             name="fName" 
+                            autofocus
                             required
                             aria-label="full name input"
                             >
                     </div>
 
                     <!-- Email & Phone (needs media query) *************** -->
-                    <div class="form-unit double">  
+                   
                         <label class="full-width-label" for="email">Email*  <input  
                             type="email" 
                             id="email" 
@@ -93,28 +94,30 @@
                         </label>
                     
                     
-                    </div>
+                   
 
                     <!-- Preferred Contact Method -->
                     <div class="form-unit"> <!-- radio grid here -->
-                        <label class="full-width-label" for="contact">Preferred Contact Method</label>
+                        <h2 class="full-width-label">Preferred Contact Method</h2>
                          <div class="form-unit__row">
 
-                            <input 
+                           
+                            <label class="email-radio" for="email-radio">Email  <input 
                                 type="radio" 
                                 id="email-radio" 
                                 name="contact"
                                 aria-label="email radio checkbox"
                                 >
-                            <label for="contact">Email</label>
+                            </label>
 
-                            <input 
+                           
+                            <label class="phone-radio" for="tel-radio">Phone  <input 
                                 type="radio" 
                                 id="tel-radio" 
                                 name="contact"
                                 aria-label="phone radio checkbox"
                                 >
-                            <label for="contact">Phone</label>
+                            </label>
                             
                         </div>
                     </div>
@@ -145,18 +148,6 @@
                     </textarea>
                     </div>
 
-                    <!-- Terms of Service -->
-                    <div class="form-unit  full">
-                        <div class="form-unit__row">
-                        <input 
-                            class="checkbox" 
-                            type="checkbox" 
-                            required
-                            >
-                        <p> I Consent to the <a href="#" class="terms-link">Terms Of Service</a></p>
-                        </div>
-                    </div>
-
                     <!-- Submit Button -->
                     <div class="form-unit full">
                         <input  
@@ -181,7 +172,7 @@
     
             <nav class="footer__nav">
                 <ul class="footer__list">
-                    <li><a class="footer__link" href="#about-section">About</a></li>
+                    <li><a class="footer__link" href="./index.html">About</a></li>
                     <li><a class="footer__link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="footer__link" href="./contact.html">Contact</a></li>
                 </ul>
@@ -189,11 +180,11 @@
     
             <div class="footer-small-links">
                 <small class="footer__copyright">
-                    &copy; 2023 Kieran Poropat
+                    &copy; 2023 | Website Created By Kieran Poropat
                 </small>
               <div class="footer__copyright2">
-                <small><a href="#"><img class="small-media-logo" src="./content/github-white48.png" alt="github logo"></a></small>
-                <small><a href="#"><img class="small-media-logo" src="./content/In-White-48.png" alt="linkedin logo"></a></small>
+                <small><a target="_blank" href="https://github.com/Kiirynn?tab=repositories"><img class="small-media-logo" src="./content/github-white48.png" alt="github logo"></a></small>
+                <small><a target="_blank" href="https://www.linkedin.com/in/kieran-poropat/"><img class="small-media-logo" src="./content/In-White-48.png" alt="linkedin logo"></a></small>
               </div>
             </div>
             

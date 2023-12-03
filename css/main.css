@@ -950,7 +950,6 @@ main {
     border-radius: 1.5rem;
     box-shadow:var(--white-box-shadow);
     overflow: hidden;
-    display: grid;
 }
 
 .form-grid{
@@ -963,6 +962,7 @@ main {
 
 .sign-up__title{
     margin-bottom: 0;
+    font-size: 2.5rem;
 }
 
 input, select, textarea {
@@ -978,16 +978,26 @@ input, select, textarea {
 
 }
 
+
+
 #email-radio, #tel-radio{
     width: 1rem;
     height: 1rem;
-    
+    display: inline-flex;
+    justify-content: center;
+}
+
+.email-radio, .phone-radio{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.email-radio {
+  margin-right: 2rem;
 }
 
 
-#tel-radio{
-  margin-left: 2rem;
-}
 
 .form-unit__row{
     display: inline-flex;
@@ -1002,6 +1012,10 @@ input, select, textarea, .form-btn{
     border: 0.0625rem solid #ccc;
     border-radius: .25rem;
 
+}
+
+#message::placeholder {
+  color: black; 
 }
 
 .terms-link{
@@ -1056,12 +1070,7 @@ label {
         grid-column: 1 / -1;
       }
 
-      .form-unit.double {
-        grid-column: span 2;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.5rem;
-      }
+     
     
 
 
