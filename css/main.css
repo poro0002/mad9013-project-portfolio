@@ -225,6 +225,7 @@ main {
     right: 1.5rem;
     background-color: var(--primary-color);
     color: black;
+    font-weight: bold;
     padding: 0.5rem 0.5rem 1rem;
     border-radius: 0.5rem 0.5rem 0 0;
     text-decoration: none;
@@ -351,7 +352,7 @@ main {
   
   
   .nav-logo{
-     width: 8em;
+     width: 5em;
   }
   
   /* Web Media Queries */   
@@ -414,14 +415,17 @@ main {
     justify-content: var(--banner-hor-align);
     align-items: var(--banner-vertical-align);
     text-align: var(--text-align);
-    padding-top: 3rem;
+    /* padding-top: 3rem; */
     padding-bottom: 3rem;
   }
   
   .banner__content{
     width: min(35em, 100%);
     margin: 1rem;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   
@@ -435,6 +439,8 @@ main {
   .banner__img {
     opacity: 0;
     animation: fadeIn 2s ease-in-out forwards ;
+    width: 22rem;
+  
     }
 
     @keyframes fadeIn {
@@ -935,11 +941,12 @@ main {
 /* mobile first */
 
 .contact-me{
-    
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(to top, var(--shade-three), var(--shade-one) )
+    background: linear-gradient(to top, var(--shade-three), var(--shade-one) );
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
 
 .contact__wrap{
