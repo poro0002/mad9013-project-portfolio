@@ -879,6 +879,7 @@ main {
     color: white;
     font-size: var(--scale-small);
     line-height: 1.3;
+    
   }
   
   
@@ -889,13 +890,15 @@ main {
   
   
   .card__img img{
-    padding: 3rem;
+      padding: 3rem;
       display: block;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
       /* aspect-ratio: 16 / 9; */
       border-top-right-radius: 1rem;
       border-top-left-radius: 1rem;
+     
+      
   }
 
 
@@ -930,7 +933,99 @@ main {
   
   }
 
+  /* Design Port photos */
+
+  .design-port{
+    
+    padding-bottom: 3rem;
+    background: linear-gradient(to top, var(--shade-three), var(--shade-one) ) ;
+  }
+
+  .design-card{
+    flex: 1;
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3rem);
+    box-shadow: var(--white-box-shadow);
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+    
+  }
+
+  .design-port__title{
+    color: white;
+    font-size: var(--scale-small);
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  .design-card .container{
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .design-port__img{
+    border-radius: 0.5rem;
+    border: 0.125rem solid white;
+    box-shadow: var(--white-box-shadow);
+  }
+
+  .design__img {
+    margin: 1rem;
+  }
+
+  .design-port__cover_img{
+    border-radius: 0.5rem;
+    border: 0.125rem solid white;
+    box-shadow: var(--white-box-shadow);
+    
+  }
+
+  .design-card__info{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+  }
+
+   /* design-port media queries */
+
+    @media only screen and (min-width: 45em){
+    
+      .design-card{
+        padding: 1rem;
+        margin-bottom: 2.5rem;
+      }  
+
+      .design__img {
+        margin: 2rem;
+      }
+
+      .design-port__title{
+        font-size: var(--scale-med);
+    }
+    } 
+
+    @media only screen and (min-width: 60em){
+      
+      .design-card{
+        padding: 0.5rem;
+        margin-bottom: 2rem;
+      }  
+
+      .design-port__title{
+        font-size: var(--scale-large);
+    }
   
+  }
+
+
+
+
   
    /* ----------------------------------------------- */
 /*------------------ PAGE 3 - Contact ------------------*/
