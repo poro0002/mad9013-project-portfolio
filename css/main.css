@@ -45,7 +45,7 @@
         --scale-xl: 2.441rem;
         --scale-large: 1.953rem;
         --scale-med: 1.563rem;
-        --scale-small: 1.25rem;
+        --scale-small: 1.235rem;
 
 }
 
@@ -433,6 +433,7 @@ main {
     color: var(--secondary-color);
     font-size: 1.8rem;
     animation: HeadFadeIn 0.8s ease-in-out forwards;
+    padding-top: 2rem;
   }
 
 
@@ -776,7 +777,7 @@ main {
    /* note, make sure to get rid of the previous hover scale effect if you run with this animation */
 
    .btn-card {
-    /* animation: pulse 3s infinite; */
+   
     color: black;
     background: linear-gradient(to left, var(--primary-color), var(--darkest-color) );
     border: none;
@@ -789,22 +790,6 @@ main {
      color .2s
    }
 
-
-
-    @keyframes pulse {
-        0% {
-            transform: scale(1);
-            
-        }
-        50% {
-            transform: scale(1.05);
-            ;
-        }
-        100% {
-            transform: scale(1);
-            
-        }
-    }
 
 
   .btn-card:hover,
@@ -958,8 +943,10 @@ main {
   .design-port__title{
     color: white;
     font-size: var(--scale-small);
+    padding: 0.5rem;
     line-height: 1.3;
     margin: 0;
+    text-align: center;
   }
 
   .design-card .container{
@@ -1008,7 +995,19 @@ main {
       .design-port__title{
         font-size: var(--scale-med);
     }
+
+      .cover-art{
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+
+      }
+
+      .cover-art__title {
+        grid-column: 1 / -1;
+      }
     } 
+
+    
 
     @media only screen and (min-width: 60em){
       
@@ -1019,6 +1018,16 @@ main {
 
       .design-port__title{
         font-size: var(--scale-large);
+    }
+
+      .cover-art{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .cover-art__title {
+      grid-column: 1 / -1;
     }
   
   }
