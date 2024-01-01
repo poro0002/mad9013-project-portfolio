@@ -47,6 +47,17 @@
         --scale-med: 1.563rem;
         --scale-small: 1.235rem;
 
+            /* PC headings use --lg
+          mobile headings use --sm */
+          /* extra font sizes */
+          --mobile-para: 0.5rem;
+          --xsm: 0.7rem;
+          --sm: 0.9rem;
+          --md: 1.1rem;
+          --lg: 1.5rem;
+          --xlg: 1.9rem;
+          --xxlg: 2.2rem;
+
 }
 
 
@@ -1142,6 +1153,82 @@ input, select, textarea, .form-btn{
     text-transform: uppercase;
     
 }
+
+/* redone contact page with no form <------------------ */
+
+.support-content{
+  background: linear-gradient(to bottom, var(--shade-three), var(--shade-one)); 
+  width: 100%;
+  height: 100vh;
+}
+
+.support-content .container{
+  
+  padding-top: var(--mobile-pd-top-cont);
+  height: 80%;
+}
+
+.support-case-gd2{
+ 
+}
+
+.support-case{
+  text-align: center;
+  color: white;
+  margin: 0.1rem;
+}
+
+.support-case p{
+  font-size: var(--mobile-para);
+}
+
+.support__h1{
+   color: white;
+   font-size: var(--sm);
+   padding: 0;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.support-case__logos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media only screen and (min-width: 45em){
+  .support-content .container{
+    padding-top: var(--pc-pd-top-cont);
+  }
+
+  .support__btn{
+    padding: var(--pc-btn);
+    font-size: var(--lg);
+  }
+
+  .support__h1{
+     font-size: var(--xlg);
+  }
+
+  .support-case p{
+    font-size: var(--sm);
+  }
+
+  .support-case{
+    margin: 4rem;
+  }
+
+  .support-case-gd2{
+      padding: 0;
+      margin: 2rem;
+  }
+
+
+} 
 
 /*----------- CODE TO IMPLEMENT BELOW -----------*/
 
