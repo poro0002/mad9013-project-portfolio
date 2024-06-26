@@ -1056,6 +1056,21 @@ main {
     
 /* mobile first */
 
+.profile-picture__cont{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 3rem;
+}
+
+.profile-picture{
+  border-radius: 120rem;
+  width: 15rem;
+  border: 0.125rem solid white;
+  box-shadow: var(--white-box-shadow);
+}
+
 .contact-me{
     min-height: 80vh;
     display: flex;
@@ -1267,9 +1282,6 @@ label {
       .full {
         grid-column: 1 / -1;
       }
-
-     
-    
 
 
 
