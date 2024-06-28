@@ -826,6 +826,61 @@ main {
 /*  Mobile First */
 
 
+.sketches__cont{
+  display: flex;
+  flex-direction: row;
+}
+
+.sketchesBtn-next, .sketchesBtn-prev, 
+.coverArtBtn-next, .coverArtBtn-prev,
+.owBtn-next, .owBtn-prev {
+   background-color: transparent;
+   color: white;
+   border: none;
+   transition: transform 0.3s ease, background-color 0.3s ease;
+   cursor: pointer;
+   margin: 1rem;
+}
+
+.sketchesBtn-next:hover,
+.sketchesBtn-next:focus,
+.sketchesBtn-prev:hover,
+.sketchesBtn-prev:focus,
+.coverArtBtn-next:hover,
+.coverArtBtn-next:focus,
+.coverArtBtn-prev:hover,
+.coverArtBtn-prev:focus,
+.owBtn-next:hover,
+.owBtn-next:focus,
+.owBtn-prev:hover,
+.owBtn-prev:focus {
+  transform: scale(1.1);
+  filter: drop-shadow(var(--white-box-shadow));
+}
+
+
+
+.sketchesBtn-prev i{
+  font-size: 2rem;
+}
+
+.sketchesBtn-next i{
+  font-size: 2rem;
+}
+
+.sketches-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sketches__img{
+   width: 40rem;
+}
+
+
 .card-content{
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -931,6 +986,14 @@ main {
   }
 
   /* Design Port photos */
+
+  .off-white__img{
+    width: 50rem;
+  }
+
+  .cover-art__img{
+   width: 50rem;
+  }
 
   .design-port{
     
@@ -1070,6 +1133,7 @@ main {
   border: 0.125rem solid white;
   box-shadow: var(--white-box-shadow);
 }
+
 
 .contact-me{
     min-height: 80vh;
