@@ -56,6 +56,8 @@ let imageData = [
 
     function updateSketches() {
         sketchesImage.src = imageData[0][currentIndexSketches].src;
+        console.log("update sketches function ran")
+        console.log(imageData[0][currentIndexSketches].src)
     }
 
     function updateOffWhite() {
@@ -70,6 +72,7 @@ let imageData = [
    // -----------------------< Sketches >-------------------------------
 
     sketchesNextBtn.addEventListener('click', () => {
+        console.log("sketches Next Button clicked");
         currentIndexSketches++;
         if (currentIndexSketches >= imageData[0].length) {
             currentIndexSketches = 0;
@@ -78,6 +81,7 @@ let imageData = [
     });
 
     sketchesPrevBtn.addEventListener('click', () => {
+        console.log("sketches prev Button clicked");
         currentIndexSketches--;
         if (currentIndexSketches < 0) {
             currentIndexSketches = imageData[0].length - 1;
