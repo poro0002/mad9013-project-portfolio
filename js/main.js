@@ -124,10 +124,10 @@ let imageData = [
 
 
     // called functions to update
-setTimeout(() => {
+
     updateOffWhite();
     updateSketches();
     updateCoverArt();
-}, 500);
+
   
 });
