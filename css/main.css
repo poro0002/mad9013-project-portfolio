@@ -790,16 +790,15 @@ main {
 
    .btn-card {
    
-    color: black;
+    color: white;
     background: linear-gradient(to left, var(--primary-color), var(--darkest-color) );
     border: none;
     font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
 
      /* transition */
-     transition:
-     background-color .2s,
-     border-color .2s,
-     color .2s
+     transition: background-color .2s, border-color .2s, color .2s;
    }
 
 
@@ -824,6 +823,121 @@ main {
   /* <----- CARDS -------------------------------> */
 
 /*  Mobile First */
+
+
+
+.card-content{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: linear-gradient(to bottom, var(--shade-three), var(--shade-one) ) ;
+    
+  }
+      
+  .card-content .container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .card-content__title{
+     color: black;
+     font-size: 2.444;
+  }
+  
+  .card{
+    flex: 1;
+    display: flex; 
+    justify-content: space-between;
+  
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3rem);
+    box-shadow: var(--white-box-shadow);
+    margin-bottom: 1rem;
+    
+  }
+  
+  
+  .card__info{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    padding: 2rem;
+   
+  }
+  
+  .card-content__text{
+    color: white;
+  }
+  
+  .card-content__title{
+    color: white;
+    font-size: var(--scale-small);
+    line-height: 1.3;
+    
+  }
+  
+  
+  
+  .card-btn{
+      
+  }
+  
+  
+  .card__img img{
+      padding: 3rem;
+      display: block;
+      width: 100%;
+      object-fit: contain;
+      /* aspect-ratio: 16 / 9; */
+      border-top-right-radius: 1rem;
+      border-top-left-radius: 1rem;
+     
+      
+  }
+
+
+  
+  /* Card media queries */
+  
+  @media only screen and (min-width: 45em){
+  
+    
+      .card-content .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        min-width: 75%;
+        
+      }  
+  
+      .card-content__title{
+        font-size: var(--scale-med);
+    }
+    } 
+    
+  
+  @media only screen and (min-width: 60em){
+      
+      .card-content .container{
+        grid-template-columns: repeat(3, 1fr);
+      }
+  
+  
+      .card-content__title{
+          font-size: var(--scale-large);
+      }
+  
+  }
+
+  /* <--------------------< Design Port photos >--------------------------> */
+
+
+  
 
 
 .sketches__cont{
@@ -877,132 +991,46 @@ main {
 
 
 .sketches__img{
-   width: 40rem;
+   /* width: 40rem; */
 }
 
 
-.card-content{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    background: linear-gradient(to bottom, var(--shade-three), var(--shade-one) ) ;
-  }
-      
-  .card-content .container{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-    
-  }
-  
-  .card-content__title{
-     color: black;
-     font-size: 2.444;
-  }
-  
-  .card{
-    flex: 1;
-    display: flex; 
-    justify-content: space-between;
-    flex-direction: column;
-    border-radius: 1rem;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(3rem);
-    box-shadow: var(--white-box-shadow);
-    margin-bottom: 1rem;
-    
-  }
-  
-  
-  .card__info{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 2rem;
-   
-  }
-  
-  .card-content__text{
-    color: white;
-  }
-  
-  .card-content__title{
-    color: white;
-    font-size: var(--scale-small);
-    line-height: 1.3;
-    
-  }
-  
-  
-  
-  .card-btn{
-      justify-self: flex-end;
-  }
-  
-  
-  .card__img img{
-      padding: 3rem;
-      display: block;
-      width: 100%;
-      object-fit: contain;
-      /* aspect-ratio: 16 / 9; */
-      border-top-right-radius: 1rem;
-      border-top-left-radius: 1rem;
-     
-      
-  }
-
-
-  
-  /* Card media queries */
-  
-  @media only screen and (min-width: 45em){
-  
-    
-      .card-content .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr ;
-        
-      }  
-  
-      .card-content__title{
-        font-size: var(--scale-med);
-    }
-    } 
-    
-  
-  @media only screen and (min-width: 60em){
-      
-      .card-content .container{
-        grid-template-columns: repeat(3, 1fr);
-      }
-  
-  
-      .card-content__title{
-          font-size: var(--scale-large);
-      }
-  
-  }
-
-  /* Design Port photos */
-
   .off-white__img{
-    width: 50rem;
+    /* width: 50rem; */
   }
 
   .cover-art__img{
-   width: 50rem;
+   /* width: 50rem; */
   }
 
+  /* .halo__vid{
+    box-shadow: var(--white-box-shadow);
+  } */
+
   .design-port{
-    
+   
     padding-bottom: 3rem;
     background: linear-gradient(to top, var(--shade-three), var(--shade-one) ) ;
+    
+    
+  }
+
+  .design-port .container{
+    /* display: grid;
+    grid-template-columns: 1fr; */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 3rem;
   }
 
   .design-card{
     flex: 1;
+ 
+    flex: 1 1 calc(50% - 2rem);
     display: flex; 
     justify-content: space-between;
     flex-direction: column;
@@ -1033,16 +1061,19 @@ main {
     border-radius: 0.5rem;
     border: 0.125rem solid white;
     box-shadow: var(--white-box-shadow);
+    
   }
 
   .design__img {
     margin: 1rem;
+   
   }
 
   .design-port__cover_img{
     border-radius: 0.5rem;
     border: 0.125rem solid white;
     box-shadow: var(--white-box-shadow);
+   
     
   }
 
@@ -1057,14 +1088,33 @@ main {
    /* design-port media queries */
 
     @media only screen and (min-width: 45em){
+
+      .design-port .container{
+         min-width: 75%;
+        
+         
+      }
+
+      .design-port{
+        
+      }
     
       .design-card{
+        flex-basis: calc(50% - 2rem);
+       
         padding: 1rem;
         margin-bottom: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+      
       }  
 
       .design__img {
         margin: 2rem;
+        flex: 1 1 auto;
+       
       }
 
       .design-port__title{
@@ -1085,6 +1135,14 @@ main {
     
 
     @media only screen and (min-width: 60em){
+
+      .design-port .container{
+       
+     }
+
+      .design-port{
+        grid-template-columns: 1fr 1fr;
+      }
       
       .design-card{
         padding: 0.5rem;
