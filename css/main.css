@@ -1107,13 +1107,13 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+        flex: 1 1 auto;
       
       }  
 
       .design__img {
         margin: 2rem;
-        flex: 1 1 auto;
+     
        
       }
 
