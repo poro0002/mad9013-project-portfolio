@@ -24,25 +24,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let imageData = [
     [
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/vinny-redone.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/owen-redone.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/ninja-redone.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/extra-redone.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/broly-redone.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/gogeta-pencil-redone.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/gogeta-color-redone.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/future-trunks-color-redone.jpg" }
+        { src: "../content/digitized/owen-redone.jpg" },
+        { src: "../content/digitized/vinny-redone.jpg" },
+        { src: "../content/digitized/ninja-redone.jpg" },
+        { src: "../content/digitized/extra-redone.jpg" },
+        { src: "../content/digitized/broly-redone.jpg" },
+        { src: "../content/digitized/gogeta-pencil-redone.jpg" },
+        { src: "../content/digitized/gogeta-color-redone.jpg" },
+        { src: "../content/digitized/future-trunks-color-redone.jpg" }
     ],
     [
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/Nike x Off White ipad mockup.png" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/nike off white iphone mockup 2.png" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/nike x off white iphone mockup.png" }
+        { src: "../content/Nike x Off White ipad mockup.png" },
+        { src: "../content/nike off white iphone mockup 2.png" },
+        { src: "../content/nike x off white iphone mockup.png" }
     ],
     [
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/12 AM COVER.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/ETERNITY COVER FINAL EP2.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/FLASHBACK COVER FINISHED.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/FAULTED COVER.jpg" }
+        { src: "../content/12 AM COVER.jpg" },
+        { src: "../content/ETERNITY COVER FINAL EP2.jpg" },
+        { src: "../content/FLASHBACK COVER FINISHED.jpg" },
+        { src: "../content/FAULTED COVER.jpg" }
     ]
 ];
 
