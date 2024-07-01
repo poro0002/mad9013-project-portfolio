@@ -1107,13 +1107,13 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        flex: 1 1 auto;
+        
       
       }  
 
       .design__img {
         margin: 2rem;
-     
+        width: 35rem;
        
       }
 
@@ -1148,6 +1148,12 @@ main {
         padding: 0.5rem;
         margin-bottom: 2rem;
       }  
+
+      .design__img {
+     
+        width: 50rem;
+       
+      }
 
       .design-port__title{
         font-size: var(--scale-large);
