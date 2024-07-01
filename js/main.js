@@ -10,9 +10,15 @@ let coverArtNextBtn = document.querySelector(".coverArtBtn-next");
 let OWPrevBtn = document.querySelector(".owBtn-prev");
 let OWNextBtn = document.querySelector(".owBtn-next");
 
+let moviePrevBtn = document.querySelector(".movieBtn-prev");
+let movieNextBtn = document.querySelector(".movieBtn-next");
+
+
 let sketchesImage = document.querySelector(".sketches__img");
 let coverArtImg = document.querySelector(".cover-art__img");
 let offWhiteImg = document.querySelector(".off-white__img");
+let movieImg = document.querySelector(".movie__img");
+
 
 
 // -----------------------< DOM CONTENT LOADED >-------------------------------
@@ -43,6 +49,10 @@ let imageData = [
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/ETERNITY COVER FINAL EP2.jpg" },
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/FLASHBACK COVER FINISHED.jpg" },
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/FAULTED COVER.jpg" }
+    ],
+    [
+        {src: "https://poro0002.github.io/mad9013-project-portfolio/content/dune-screen-4.png"},
+        {src: "https://poro0002.github.io/mad9013-project-portfolio/content/batman mockup.png"}
     ]
 ];
 
@@ -51,6 +61,7 @@ let imageData = [
     let currentIndexSketches = 0;
     let currentIndexOffWhite = 0;
     let currentIndexCoverArt = 0;
+    let currentIndexMoviePoster = 0;
 
 // -----------------------< Update Functions >-------------------------------
 
@@ -68,6 +79,11 @@ let imageData = [
     function updateCoverArt() {
         coverArtImg.src = imageData[2][currentIndexCoverArt].src;
     }
+
+    function updateMoviePoster() {
+        coverArtImg.src = imageData[3][currentIndexMoviePoster].src;
+    }
+
 
 
    // -----------------------< Sketches >-------------------------------
@@ -107,6 +123,25 @@ let imageData = [
         }
         updateOffWhite();
     });
+
+// -----------------------< Movie Posters >-------------------------------
+
+movieNextBtn.addEventListener('click', () => {
+    currentIndexMoviePoster++;
+    if (currentIndexMoviePoster >= imageData[3].length) {
+        currentIndexMoviePoster = 0;
+    }
+    updateMoviePoster();
+});
+
+moviePrevBtn.addEventListener('click', () => {
+    currentIndexMoviePoster--;
+    if (currentIndexMoviePoster < 0) {
+        currentIndexMoviePoster = imageData[3].length - 1;
+    }
+    updateMoviePoster();
+});
+
 
 // -----------------------< Cover Art >-------------------------------
 
