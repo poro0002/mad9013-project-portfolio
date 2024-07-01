@@ -74,6 +74,8 @@ html {
   line-height: 1.5;
   font-family: var(--font-stack);
   font-size: 1.2rem;
+
+    scroll-behavior: smooth;
   
 }
 
@@ -820,6 +822,8 @@ main {
 
 
 
+
+
   /* <----- CARDS -------------------------------> */
 
 /*  Mobile First */
@@ -906,7 +910,8 @@ main {
   /* Card media queries */
   
   @media only screen and (min-width: 45em){
-  
+
+
     
       .card-content .container{
         display: grid;
@@ -937,6 +942,43 @@ main {
   /* <--------------------< Design Port photos >--------------------------> */
 
 
+.design-nav{
+  display: none;
+  
+  
+  overflow: hidden;
+  padding: 3rem;
+}
+
+.design-nav__header{
+
+}
+
+.design-nav__list{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.design-nav-list__item{
+ padding: 1rem;
+ transition: transform 0.3s ease,  0.3s ease;
+}
+
+
+.design-nav-list__item img{
+  text-decoration: none;
+}
+
+.design-nav-list__item{
+  width: 5rem;
+}
+
+
   
 
 
@@ -947,7 +989,8 @@ main {
 
 .sketchesBtn-next, .sketchesBtn-prev, 
 .coverArtBtn-next, .coverArtBtn-prev,
-.owBtn-next, .owBtn-prev {
+.owBtn-next, .owBtn-prev,
+.movieBtn-next, .movieBtn-prev {
    background-color: transparent;
    color: white;
    border: none;
@@ -967,7 +1010,11 @@ main {
 .owBtn-next:hover,
 .owBtn-next:focus,
 .owBtn-prev:hover,
-.owBtn-prev:focus {
+.owBtn-prev:focus,
+.movieBtn-next:hover,
+.movieBtn-next:focus,
+.movieBtn-pre:hover,  
+.movieBtn-pre:focus {
   transform: scale(1.1);
   filter: drop-shadow(var(--white-box-shadow));
 }
@@ -1007,6 +1054,21 @@ main {
     box-shadow: var(--white-box-shadow);
   } */
 
+  #val-design__btn{
+    
+    background: rgb(255, 70, 85);
+    border: 0.125rem solid white;
+    color: white;
+  }
+
+  #val-design__btn:hover{
+   
+    border: 0.125rem solid white;
+    box-shadow: var(--white-box-shadow);
+    color: white;
+   
+  }
+
   .design-port{
    
     padding-bottom: 3rem;
@@ -1027,12 +1089,12 @@ main {
     gap: 3rem;
   }
 
+
   .design-card{
-    flex: 1;
  
-    flex: 1 1 calc(50% - 2rem);
     display: flex; 
     justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     border-radius: 1rem;
     background-color: rgba(0, 0, 0, 0.5);
@@ -1089,32 +1151,92 @@ main {
 
     @media only screen and (min-width: 45em){
 
+      .design-port{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+  .design-nav__header{
+    font-size: var(--md);
+    color: white;
+    margin: 0;
+  }
+
       .design-port .container{
          min-width: 75%;
         
          
       }
 
+      .design-nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 4rem;
+        width: 75%;
+        border-radius: 0.5rem;
+        box-shadow: var(--white-box-shadow);
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      
+      .design-nav__list{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0
+      }
+
+      .design-nav-list__item:hover,
+      .design-nav-list__item:focus{
+         transform: scale(1.1); /* Scale slightly bigger */
+         filter: drop-shadow(--white-box-shadow);
+         cursor: pointer;
+      }
+      
+      
+      .design-nav-list__item{
+        width: 5rem;
+      }
+      
+      .design-nav-list__item img{
+       
+        
+      }
+    
+
       .design-port{
         
       }
     
       .design-card{
-        flex-basis: calc(50% - 2rem);
+  
        
         padding: 1rem;
         margin-bottom: 2.5rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        
+    
       
       }  
 
       .design__img {
         margin: 2rem;
-        width: 35rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex:1;
+      }
+
+      .design-port__img {
+
        
+
       }
 
       .design-port__title{
@@ -1122,8 +1244,8 @@ main {
     }
 
       .cover-art{
-         display: grid;
-         grid-template-columns: 1fr 1fr;
+        
+      
 
       }
 
@@ -1141,7 +1263,7 @@ main {
      }
 
       .design-port{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr ;
       }
       
       .design-card{
@@ -1149,10 +1271,9 @@ main {
         margin-bottom: 2rem;
       }  
 
-      .design__img {
-     
-        width: 50rem;
+      .design-port__img {
        
+  
       }
 
       .design-port__title{
@@ -1160,9 +1281,7 @@ main {
     }
 
       .cover-art{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-
+    
     }
 
     .cover-art__title {
