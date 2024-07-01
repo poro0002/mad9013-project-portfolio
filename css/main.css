@@ -1101,7 +1101,7 @@ main {
     backdrop-filter: blur(3rem);
     box-shadow: var(--white-box-shadow);
     margin-bottom: 3rem;
-    padding: 0.5rem;
+    padding: 1rem;
     
   }
 

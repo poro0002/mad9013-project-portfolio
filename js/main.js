@@ -81,7 +81,7 @@ let imageData = [
     }
 
     function updateMoviePoster() {
-        coverArtImg.src = imageData[3][currentIndexMoviePoster].src;
+        movieImg.src = imageData[3][currentIndexMoviePoster].src;
     }
 
 
