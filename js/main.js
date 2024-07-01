@@ -168,6 +168,6 @@ moviePrevBtn.addEventListener('click', () => {
     updateOffWhite();
     updateSketches();
     updateCoverArt();
-
+    updateMoviePoster()
   
 });
