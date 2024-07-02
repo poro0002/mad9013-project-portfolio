@@ -60,6 +60,60 @@
 
 }
 
+/* <----------------------< FONTS >-----------------------------------> */
+
+@font-face {
+  font-family: 'ValorantFont';
+  src: url('../content/fonts/Valorant\ Font.ttf') format('truetype');
+
+}
+
+/* Define Black Wukong font */
+@font-face {
+  font-family: 'BlackWukongFont';
+  src: url('../content/fonts/Harukaze.ttf') format('truetype');
+  
+
+}
+
+/* Define Sketch font */
+@font-face {
+  font-family: 'SketchFont';
+  src: url('../content/fonts/Sketch_PersonalUseOnly.ttf') format('truetype');
+
+}
+
+/* Define Off-White font */
+@font-face {
+  font-family: 'OffWhiteFont';
+  src: url('../content/fonts/Helvetica-Bold-Font.ttf') format('truetype');
+
+  
+}
+
+/* Create classes for each font */
+.valorant-font {
+  font-family: 'ValorantFont', sans-serif;
+}
+
+.black-wukong-font {
+  font-family: 'BlackWukongFont', sans-serif;
+  letter-spacing: 0.5rem;
+  font-weight: 200;
+}
+
+.sketch-font {
+  font-family: 'SketchFont', sans-serif;
+  letter-spacing: 0.5rem;
+  
+}
+
+.off-white-font {
+  font-family: 'OffWhiteFont', sans-serif;
+  letter-spacing: 0.2rem;
+ 
+}
+
 
 
 /* Box sizing rules */
@@ -996,7 +1050,8 @@ main {
    border: none;
    transition: transform 0.3s ease, background-color 0.3s ease;
    cursor: pointer;
-   margin: 1rem;
+   margin: 0.5rem;
+   padding: 0;
 }
 
 .sketchesBtn-next:hover,
@@ -1020,12 +1075,14 @@ main {
 }
 
 
-
-.sketchesBtn-prev i{
-  font-size: 2rem;
-}
-
-.sketchesBtn-next i{
+.sketchesBtn-next i,
+.sketchesBtn-prev i,
+.coverArtBtn-next i,
+.coverArtBtn-prev i,
+.owBtn-next i,
+.owBtn-prev i,
+.movieBtn-next i,
+.movieBtn-prev i {
   font-size: 2rem;
 }
 
@@ -1038,16 +1095,20 @@ main {
 
 
 .sketches__img{
-   /* width: 40rem; */
+   width: 10rem;
 }
 
 
   .off-white__img{
-    /* width: 50rem; */
+    width: 10rem;
   }
 
   .cover-art__img{
-   /* width: 50rem; */
+   width: 10rem;
+  }
+
+  .movie__img{
+    width: 10rem;
   }
 
   /* .halo__vid{
@@ -1170,6 +1231,23 @@ main {
          
       }
 
+      .sketches__img{
+       width: 40rem;
+     }
+
+     .off-white__img{
+      width: 40rem;
+    }
+  
+    .cover-art__img{
+      width: 40rem;
+    }
+
+    .movie__img{
+      width: 40rem;
+    }
+     
+
       .design-nav{
         display: flex;
         justify-content: center;
@@ -1261,6 +1339,24 @@ main {
       .design-port .container{
        
      }
+
+     .sketches__img{
+      width: 55rem;
+   }
+
+
+
+  .off-white__img{
+   width: 55rem;
+ }
+
+ .cover-art__img{
+   width: 55rem;
+ }
+
+ .movie__img{
+   width: 55rem;
+ }
 
       .design-port{
         grid-template-columns: 1fr ;
