@@ -1,5 +1,7 @@
 # Kieran's Portfolio
 
+![Example Image](content/frasr-face-darker.png)
+
 Welcome to my portfolio website! This site showcases a collection of my projects, design mockups, and creative work. Here, you can explore various aspects of my skills, including web development, UI/UX design, and more.
 
 ## Table of Contents
