@@ -595,6 +595,18 @@ main {
 
    /* <----- SKILLS -------------------------------> */
 
+   #skills
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    align-items: start;
+  }
+
+  #skills .container{
+    margin-top: 4rem;
+  }
+
    .skills-content{
      display: flex;
      flex-direction: column;
@@ -611,13 +623,35 @@ main {
       justify-content: center;
       align-items: center;
       padding-bottom: 2rem;
+      grid-column: 1 / -1;
+     
    }
+
+   .skills-header1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: none;
+    margin-bottom: 2rem;
+    grid-column: 1 / -1;
+  
+   
+ }
+
+
 
    .skills-header__h2 {
        font-size: 2.2rem;
        color: white;
-       border-bottom: 0.125rem solid white ;
+      
        
+       
+   }
+
+   .skills-header__h3{
+    font-size: 2.2rem;
+    color: white;
+    filter: drop-shadow(var(--white-box-shadow));
    }
 
    .skill .card__info .card__text-box {
@@ -639,18 +673,30 @@ main {
    }
 
    .skill .card__img {
-       width: 50%;
-       
-   }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; /* Adjust as needed */
+}
 
    .skill .card__img img {
     padding: 1rem;
      
 }
 
+.skill .card__img i {
+  padding: 1rem;
+  color: white;
+  width: 100%;
+}
+
 
 
    @media only screen and (min-width: 60em){
+
+    #skills{
+      grid-template-columns: 1fr 1fr ;
+    }
          
         .skill {
             flex-direction: row;
@@ -664,6 +710,10 @@ main {
         .skill .card__img img {
             padding: 3rem;
         }
+
+        .skill .card__img i {
+          padding: 3rem;
+      }
 
         .skill .card__info .card__text-box{
             
