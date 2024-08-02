@@ -627,6 +627,11 @@ main {
      
    }
 
+   #trans{
+       opacity: 0; 
+     
+   }
+
    .skills-header1 {
     display: flex;
     justify-content: center;
