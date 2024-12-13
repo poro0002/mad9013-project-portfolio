@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let imageData = [
     [
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/yuiji3.jpg" },
+        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/yuji3.jpg" },
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/jojo.jpg" },
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/draw3.jpg" },
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/owen-redone.jpg" },
