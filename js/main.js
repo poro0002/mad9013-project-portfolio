@@ -30,6 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 let imageData = [
     [
+        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/yuiji3.jpg" },
+        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/jojo.jpg" },
+        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/draw3.jpg" },
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/owen-redone.jpg" },
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/vinny-redone.jpg" },
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/ninja-redone.jpg" },
@@ -37,7 +40,8 @@ let imageData = [
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/broly-redone.jpg" },
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/gogeta-pencil-redone.jpg" },
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/gogeta-color-redone.jpg" },
-        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/future-trunks-color-redone.jpg" }
+        { src: "https://poro0002.github.io/mad9013-project-portfolio/content/digitized/future-trunks-color-redone.jpg" },
+        
     ],
     [
         { src: "https://poro0002.github.io/mad9013-project-portfolio/content/Nike x Off White ipad mockup.png" },
