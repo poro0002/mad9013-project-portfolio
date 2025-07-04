@@ -770,6 +770,16 @@ main {
       transition: transform 0.3s;
     }
 
+    .flex-center-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  align-items: center;     /* horizontal centering */
+  text-align: center;      /* center the text inside */
+  gap: 1rem;               /* optional spacing between heading and button */
+  min-height: 200px;       /* gives some vertical space */
+}
+
 
   
     .footer__icon{
