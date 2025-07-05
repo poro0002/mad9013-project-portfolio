@@ -1,80 +1,91 @@
-# Kieran's Portfolio
+# Kieran Poropat – Portfolio Website
 
-![Example Image](content/frasr-face-darker192.png)
+![Portfolio Banner](content/frasr-face-darker192.png)
 
-Welcome to my portfolio website! This site showcases a collection of my projects, design mockups, and creative work. Here, you can explore various aspects of my skills, including web development, UI/UX design, and more.
+Welcome to my **portfolio website**, showcasing selected **projects, design prototypes, and creative work**. This site demonstrates my skills in **web development, React/React Native, full-stack development, and UI/UX design** through interactive, clean, and responsive projects.
 
-## Table of Contents
+---
+
+## 📂 Table of Contents
 
 - [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Project Cards](#project-cards)
-- [Designs](#designs)
+- [Tech Stack](#tech-stack)
+- [Highlighted Projects](#highlighted-projects)
+- [Design Work](#design-work)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
 
-## Features
+---
 
-- **Project Showcases**: View various full-stack projects, design prototypes, and more.
-- **Design Mockups**: Explore different design concepts and mockups.
-- **Interactive Elements**: Includes videos and interactive galleries for a dynamic experience.
-- **Responsive Design**: Fully responsive design that adapts to different screen sizes.
+## ✨ Features
 
-## Technologies Used
+- **Project Showcases:** Full-stack and front-end React projects, design system tools, and prototypes.
+- **Responsive Design:** Mobile-first, accessible on all devices.
+- **Interactive Galleries:** Videos, image galleries, and dynamic showcases.
+- **Progressive Web App (PWA):** Installable with offline support and fast performance.
 
-- **HTML5**: Markup for the website structure.
-- **CSS3**: Styling the layout and design.
-- **JavaScript**: Interactivity and dynamic content.
-- **React**: For building the full-stack web applications.
-- **Node.js**: Backend server for full-stack projects.
-- **MongoDB**: Database for storing project data.
-- **PWA**: Progressive Web App features for enhanced user experience.
-- **Material Icons**: For enhanced visual elements.
+---
 
-## Project Cards
+## 🛠️ Tech Stack
 
-- **React + Vite RAWG Full-Stack Website**: A full-stack website using React, Express JS, and MongoDB.
-- **Nike x OFF-WHITE Concept REDONE**: A concept website showcasing a Nike x OFF-WHITE design.
-- **Fetch & Handle Project**: A JavaScript project utilizing MediaPipe Face Detector API and Unsplash API.
+- **Frontend:** HTML5, CSS3, JavaScript (ES6+), React
+- **Backend:** Node.js, Express.js, MongoDB (for full-stack projects)
+- **Tools:** Git, GitHub, Figma, VS Code, Material Icons
+- **Features:** PWA, service workers, JWT authentication (in full-stack projects)
 
-## Designs
+---
 
-- **Halo Infinite Main Menu Concept**  
-  _Video Preview_: A concept video showcasing the main menu design for Halo Infinite.
+## 🌟 Highlighted Projects
 
-- **Black Myth: Wukong Mockup**  
-  _Image Mockup_: A mockup of the Black Myth: Wukong UI/UX design.
+- **[RAWG Full-Stack Gaming App](https://github.com/poro0002/rawg_fullstack):**  
+  React + Node + MongoDB app fetching live gaming data with JWT authentication and service workers for offline support.
 
-- **Valorant Mockup**  
-  _Video Preview_: A mockup of the Valorant UI/UX design.
+- **[Synthesis React Native App](https://github.com/poro0002/Synthesis_android_app):**  
+  A React Native app that helps designers build consistent design systems efficiently.
 
-- **Movie Posters**  
-  _Interactive Gallery_: An interactive gallery showcasing movie poster designs.
+- **[Nike x OFF-WHITE Landing Page](https://github.com/poro0002/nike-offwhite-proto-redone):**  
+  A clean, responsive front-end prototype replicating branded landing experiences with modern layout and animation.
 
-- **Nike OFF-WHITE Mockup**  
-  _Interactive Gallery_: An interactive gallery for Nike OFF-WHITE iPad/iPhone mockups.
+---
 
-- **Character Concept Sketches**  
-  _Interactive Gallery_: An interactive gallery showcasing various character concept sketches.
+## 🎨 Design Work
 
-- **Cover Art**  
-  _Interactive Gallery_: An interactive gallery showcasing cover art designs.
+- **Halo Infinite Main Menu Concept:** Video preview showcasing UI/UX design exploration.
+- **Black Myth: Wukong Mockup:** High-fidelity UI/UX design.
+- **Valorant UI Mockup:** Video showcasing a concept menu and in-game UI.
+- **Nike OFF-WHITE Mockups:** Interactive gallery for iPad/iPhone concepts.
+- **Movie Posters & Cover Art:** Interactive galleries showcasing design and branding work.
+- **Character Concept Sketches:** Gallery showcasing character and concept art.
 
-## Installation
+---
 
-(Include installation instructions here.)
+## ⚙️ Installation
 
-## Usage
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/poro0002/mad9013-project-portfolio.git
+   ```
+2. Open `index.html` in your browser, or deploy using GitHub Pages for live viewing.
 
-(Include usage instructions here.)
+---
 
-## Credits
+## 🚀 Usage
 
-- **Kieran Poropat**: [GitHub](https://github.com/poro0002) | [LinkedIn](https://www.linkedin.com/in/kieran-poropat) | [Dribbble](https://dribbble.com/KieranPoropat)
-- **Material Icons**: [Material Icons](https://material.io/resources/icons/)
+- Explore projects, design work, and prototypes directly in your browser.
+- Review responsive design principles and interactive UI elements.
+- Use as a personal showcase for potential employers and clients.
 
-## License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## 🙏 Credits
+
+- **Kieran Poropat:** [GitHub](https://github.com/poro0002) | [LinkedIn](https://www.linkedin.com/in/kieran-poropat) | [Dribbble](https://dribbble.com/KieranPoropat)
+- **Material Icons:** [Material Icons](https://material.io/resources/icons/)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
