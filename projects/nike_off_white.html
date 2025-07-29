@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+     <link rel="stylesheet" href="../css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@400;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="icon" type="image/svg+xml" href="../content/frasr-face-darker192.png" />
+    <title>Nike Off-White E-Commerce Concept Web App</title>
+    
+</head>
+<body id="page">
+    <ul class="skip-links">
+        <li>
+          <a class="skip-links__link" href="#nav">Skip to main navigation</a>
+        </li>
+        <li>
+          <a class="skip-links__link" href="#main">Skip to main content</a>
+        </li>
+       
+     </ul>
+     
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="../content/Ink-48691.mp4" aria-label="background video of ink being poured into darkness" alt="background video of ink being poured into darkness" type="video/mp4">
+            
+        </video>
+    </div>
+
+    <nav id="nav" class="navbar">
+        <div class="container">
+            
+            <header class="logo-head-div">
+                <a class="nav-logo" href="index.html"><img src="../content/white-SIGNATURE.png" alt="adventure-logo"></a>
+            </header>
+
+          <ul class="nav-list">
+                  <li><a class="link" href="../index.html">About</a></li>
+                  <li><a class="link" href="../portfolio.html">Portfolio</a></li>
+                  <li><a class="link" href="../contact.html">Contact</a></li>
+                  <li><a class="link" href="../resume.html">Resume</a></li>
+                  
+          </ul>
+        </div>
+      </nav>
+
+   <main id="main">
+    
+    <section id="contact-me" class="contact-me" tabindex="0">
+  <div class="container container--text">
+    <div class="about-page-cont">
+      <div class="about-page">
+
+         <div class="case_logo">
+            <img src="../content/off white logo white.png" alt="Nike Off-White Project">
+         </div>
+
+        <section class="intro">
+          <h1>Frontend Cart Logic and UX/UI Exploration: A Tyhios Project</h1>
+           <p><strong>2023</strong></p>
+          <h2>Introduction</h2>
+          <p>This project is a recreation of a Nike x Off-White landing page, prioritizing visual appeal and dynamic cart functionality without the use of a backend database.</p>
+          <p>Although visually simple, the project posed interesting challenges regarding frontend-only cart state management, handling dynamic user input, and maintaining an engaging product interface. It is a concise demonstration of managing real-world user flows entirely through HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <section class="overview">
+          <h2>Overview</h2>
+          <p>This was a solo frontend project designed to test the scalability and maintainability of complex shopping cart logic using only client-side technologies like localStorage. My goal was to create a functioning product page experience that mimics real-world eCommerce UX using vanilla tools.</p>
+        </section>
+
+        <section class="frameworks">
+          <h2>Frameworks</h2>
+          <ul>
+            <li>Vanilla JavaScript</li>
+            <li>HTML5/CSS3</li>
+          </ul>
+        </section>
+
+        <section class="apis">
+          <h2>Browser APIs</h2>
+          <ul>
+            <li>LocalStorage API</li>
+            <li>DOM Manipulation</li>
+          </ul>
+        </section>
+
+        <section class="features">
+          <h2>Features</h2>
+          <ul>
+            <li>Dynamic cart creation using JavaScript and DOM templates</li>
+            <li>Saving individual product HTML and attributes (dataId, size, quantity) into localStorage</li>
+            <li>Interactive UI effects and hover states</li>
+            <li>Instant price total update</li>
+            <li>Basic search bar filtering</li>
+          </ul>
+        </section>
+
+        <section class="challenges">
+          <h2>Challenges</h2>
+
+          <h3 class="h3-alt">- LocalStorage Structure and Data Integrity -</h3>
+          <p>One of the main challenges was managing the cart’s state using only localStorage. This involved storing complex objects containing both raw data and literal HTML strings. While functional, storing raw HTML as part of the cart object proved brittle—any change to markup would break the logic or cause display issues when re-rendered.</p>
+
+          <h3>- Namespace and Scope Conflicts -</h3>
+          <p>There were issues where globally scoped variables or function names caused unexpected behavior across modules. This especially became problematic as event listeners and component logic started to overlap during interactions with the cart.</p>
+
+          <h3>- Maintaining Cart State Across Refreshes -</h3>
+          <p>Ensuring that size selections, quantities, and item displays persisted across sessions required constant serialization and deserialization of cart contents. This led to bloated localStorage data and complicated logic for re-rendering HTML dynamically upon reload.</p>
+        </section>
+
+        <section class="what-went-well">
+          <h2>What Went Well</h2>
+          <ul>
+            <li>Clean, modern UI inspired by real-world brand design</li>
+            <li>Cart visually updates in real-time with immediate price feedback</li>
+            <li>Fully functional without a backend or database</li>
+            <li>Quick development cycle with consistent modular CSS</li>
+          </ul>
+        </section>
+
+        <section class="what-went-wrong">
+          <h2>What Went Wrong</h2>
+          <ul>
+            <li>Storing raw HTML in localStorage is not scalable or safe</li>
+            <li>No error handling for missing localStorage items</li>
+            <li>Namespace collisions created bugs during user interaction</li>
+            <li>Cart logic could have been abstracted better into reusable functions</li>
+          </ul>
+        </section>
+
+        <section class="improvements">
+          <h2>How It Can Be Improved</h2>
+          <ul>
+            <li>Use structured JSON-only objects for localStorage to avoid stale HTML</li>
+            <li>Implement UUID or hash-based cart item keys with scoped state management</li>
+            <li>Introduce a frontend framework like React to simplify UI state syncing</li>
+            <li>Add unit tests and error fallbacks for localStorage operations</li>
+          </ul>
+        </section>
+
+        <section class="problems-it-solves">
+          <h2>Problems It Solves</h2>
+          <p>This project doesn’t break technical ground, but it does offer a minimal, aesthetically pleasing user shopping experience. It makes it easy for users to find and visually compare sneaker models, pick sizes, and see total cost without overcomplication. It also demonstrates a deeper understanding of client-side logic needed to support real-time interaction, especially for freelance or early-stage product mockups.</p>
+        </section>
+
+        <section class="conclusion">
+          <h2>Conclusion</h2>
+          <p>This project provided a valuable hands-on opportunity to explore the limits of frontend-only development for a product-focused interface. Despite not using a backend or third-party state library, I was able to simulate core eCommerce interactions through DOM manipulation, localStorage, and thoughtful UI.</p>
+          <p>While the approach showed its limitations—especially in terms of code robustness and scalability—it revealed key areas where future projects can grow. If rebuilt, a React or Vue implementation with proper backend support would dramatically improve the architecture and user experience. Still, this snapshot of early problem-solving reflects my focus on creativity, iteration, and building visually compelling solutions from the ground up.</p>
+        </section>
+
+        <div class="sig-cont">
+          <img class="frasr-logo" src="../content/white-SIGNATURE.png" alt="signature logo" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main> 
+
+    <footer class="footer alt-fade-bkgd">
+        <div class="container">
+            <a class="footer__logo" href="/">
+                <img src="../content/white-SIGNATURE.png" alt="signature logo" class="footer__icon">
+            </a>
+    
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li><a class="footer__link" href="../index.html">About</a></li>
+                    <li><a class="footer__link" href="../portfolio.html">Portfolio</a></li>
+                    <li><a class="footer__link" href="../contact.html">Contact</a></li>
+                     <li><a class="footer__link" href="../resume.html">Resume</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer-small-links">
+                <small class="footer__copyright">
+                    &copy; 2025 | Website Created By Kieran Poropat
+                </small>
+              <div class="footer__copyright2">
+                <small><a target="_blank" href="https://github.com/poro0002"><img class="small-media-logo" src="../content/github-white48.png" alt="github logo"></a></small>
+                <small><a target="_blank" href="https://www.linkedin.com/in/kieran-poropat/"><img class="small-media-logo" src="../content/In-White-48.png" alt="linkedin logo"></a></small>
+                <small><a target="_blank" href="https://dribbble.com/Kieran_"><img class="small-media-logo" src="../content/dribbble-white-logo.png" alt="dribble logo"></a></small>
+               
+              </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <a href="#page" class="to-top">To Top</a>
+    
+</body>
+</html>

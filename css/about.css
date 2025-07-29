@@ -1,0 +1,101 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+   
+}
+
+.about-page-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+
+@media only screen and (min-width: 100em) {
+    .about-page {
+        width: 100%;
+    }
+}
+  
+
+h1{
+    /* font-size: var(--xxlg); */
+    font-size: xx-large;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-style: italic;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    /* color: var(--eggshell);
+    font-size: var(--lg); */
+     color: white;
+      text-align: center;
+}
+
+h3{
+    margin-top: 3rem;
+    font-style: italic;
+    /* color: var(--off-white); */
+     color: white;
+      text-align: center;
+}
+
+.h3-alt{
+   margin-top: 0;
+    text-align: center;
+}
+
+
+p{
+    text-align: center; 
+     color: white;
+    /* font-size: var(--sm); */
+}
+
+
+
+ul {
+    list-style-type: disc;
+    text-align: left;
+  
+}
+
+/* 
+ul li span{
+    color: var(--almond);
+    
+} */
+
+li {
+    /* margin-bottom: 0.5em; */
+     color: white;
+    /* font-size: var(--sm); */
+}
+
+section {
+    /* margin-bottom: 2em; */
+}
+
+.intro, .overview, .frameworks, .apis, .database, .dependencies, .features, .deployment, .version-control, .challenges, .personal-value, .conclusion {
+    margin-bottom: 1.5em;
+}
+
+.sig-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.frasr-logo{
+    width: 7rem;
+}
+
+
