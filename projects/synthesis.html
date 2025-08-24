@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+     <link rel="stylesheet" href="../css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@400;600&family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto+Mono:wght@100&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="icon" type="image/svg+xml" href="../content/frasr-face-darker192.png" />
+    <title>RAWG Full Stack Project</title>
+    
+</head>
+<body id="page">
+    <ul class="skip-links">
+        <li>
+          <a class="skip-links__link" href="#nav">Skip to main navigation</a>
+        </li>
+        <li>
+          <a class="skip-links__link" href="#main">Skip to main content</a>
+        </li>
+       
+     </ul>
+     
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="../content/Ink-2.mp4" aria-label="background video of ink being poured into darkness" alt="background video of ink being poured into darkness" type="video/mp4">
+            
+        </video>
+    </div>
+
+    <nav id="nav" class="navbar">
+        <div class="container">
+            
+            <header class="logo-head-div">
+                <a class="nav-logo" href="../index.html"><img src="../content/white-SIGNATURE.png" alt="adventure-logo"></a>
+            </header>
+
+          <ul class="nav-list">
+                  <li><a class="link" href="../index.html">About</a></li>
+                  <li><a class="link" href="../portfolio.html">Portfolio</a></li>
+                  <li><a class="link" href="../contact.html">Contact</a></li>
+                  <li><a class="link" href="../resume.html">Resume</a></li>
+                  
+          </ul>
+        </div>
+      </nav>
+
+   <main id="main">
+    
+    <section id="contact-me" class="contact-me" tabindex="0">
+        <div class="container container--text">
+          <div class="about-page-cont">
+           <div class="about-page">
+
+             <div class="case_logo">
+               <img src="../content/logo2.png" alt="synthesis logo">
+            </div>
+
+            <section class="intro">
+                <h1>Synthesis: React Native Design System App</h1>
+                <p><strong>2025</strong></p>
+                <h2>Introduction</h2>
+                <p>Synthesis is a React Native application built to streamline the creation, management, and customization of design systems across multiple screens and elements. The project emphasizes seamless data handling, responsive UI updates, and efficient user interaction. <strong>The core purpose of this app is to simplify and accelerate a designer's process of creating a design system for any project.</strong> Throughout development, I tackled advanced state management patterns, asynchronous data flows, and mobile-specific challenges, resulting in a robust app tailored for creative and technical users.</p>
+            </section>
+         
+             <section class="overview">
+                 <h2>Overview</h2>
+                 <p>The app provides a platform for managing design system elements such as fonts, gradients, components and typography. The goal was to maintain real-time updates, support scalable nested data structures, and ensure smooth navigation across multiple screens while handling asynchronous data from Firestore.</p>
+             </section>
+         
+             <section class="frameworks">
+                 <h2>Frameworks</h2>
+                 <ul>
+                     <li>React Native</li>
+                     <li>Expo</li>
+                 </ul>
+             </section>
+         
+             <section class="apis">
+                 <h2>APIs</h2>
+                 <ul>
+                     <li>Firestore</li>
+                     <li>REST API</li>
+                     <li>AsyncStorage</li>
+                 </ul>
+             </section>
+         
+             <section class="database">
+                 <h2>Database</h2>
+                 <p>Firestore (NoSQL, schema-less)</p>
+             </section>
+         
+             <section class="dependencies">
+                 <h2>Dependencies</h2>
+                 <ul>
+                        <li><strong>@sendgrid/mail</strong> - for sending emails through SendGrid</li>
+                        <li><strong>bcrypt</strong> - hashing passwords for secure storage</li>
+                        <li><strong>cors</strong> - handling cross-origin requests</li>
+                        <li><strong>dotenv</strong> - managing environment variables</li>
+                        <li><strong>express</strong> - backend server framework</li>
+                        <li><strong>firebase</strong> - client-side Firebase SDK</li>
+                        <li><strong>firebase-admin</strong> - server-side Firebase admin operations</li>
+                        <li><strong>fs-extra</strong> - enhanced file system operations</li>
+                        <li><strong>jwt-decode</strong> - decoding JWT tokens</li>
+                        <li><strong>xss</strong> - sanitizing inputs to prevent XSS attacks</li>
+                        <li><strong>express-session</strong> - session management</li>
+                        <li><strong>helmet</strong> - security headers for Express</li>
+                        <li><strong>jsonwebtoken</strong> - user authentication and token management</li>
+                        <li><strong>nodemon</strong> - automatic server reload during development</li>
+                        <li><strong>passport</strong> - authentication middleware</li>
+                        <li><strong>node-fetch</strong> - server-side fetch requests</li>
+                 </ul>
+             </section>
+         
+             <section class="features">
+                 <h2>Features</h2>
+                 <ul>
+                     <li>Multi-screen navigation with nested stacks</li>
+                     <li>Optimistic state updates for immediate UI feedback</li>
+                     <li>CRUD operations for design system elements</li>
+                     <li>Toggle selection for elements</li>
+                     <li>Centralized state via React Context</li>
+                     <li>Async data fetching with Firestore</li>
+                     <li>Dynamic rendering of nested design system elements</li>
+                     <li>Error handling for undefined and asynchronous states</li>
+                     <li>Convert/Export Json design system data to the users email</li>
+                 </ul>
+             </section>
+         
+             <section class="deployment">
+                 <h2>Deployment</h2>
+                   <ul>
+                    <li><strong>EAS (Expo Application Services)</strong> - building and submitting the app to app stores</li>
+                    <li><strong>Docker</strong> - containerizing backend services for consistent deployment</li>
+                    <li><strong>Google Cloud Server</strong> - hosting backend services and Firestore database</li>
+                    <li><strong>Google Cloud Console</strong> - managing server infrastructure and app deployment</li>
+                    <li><strong>Google Play Store</strong> - publishing the Android version of the app</li>
+                    <li><strong>Github</strong></li>
+                  </ul>
+             </section>
+         
+             <section class="version-control">
+                 <h2>Version Control</h2>
+                 <p>Git</p>
+             </section>
+         
+             <section class="challenges">
+                 <h2>Challenges</h2>
+
+                 <h3>- Understanding useState Across Screens -</h3>
+                 <p>Navigating multiple screens revealed the ephemeral nature of local useState. After deleting a design system, screens did not automatically refresh their local state, resulting in outdated UI data. I learned that screens maintain only their initial state unless explicitly refreshed or re-fetched from context or backend.</p>
+
+                 <h3>- Optimistic State Updates vs. Refetching -</h3>
+                 <p>Implementing “optimistic updates” allowed the UI to immediately reflect deletions without waiting for backend confirmation. This improved responsiveness but highlighted the challenge of maintaining a single source of truth across screens and context.</p>
+
+                 <h3>- React Context Integration -</h3>
+                 <p>Using React Context for centralized state management was initially confusing because it replaced traditional prop passing. While powerful for shared state, it required explicit syncing with local screen states to avoid stale data.</p>
+                 
+                 <h3>- State Syncing & Data Shape Complexity -</h3>
+                 <p>Managing multiple layers of state (context vs local) and nested data structures introduced subtle bugs. Many of my design system data were array structures that I built myself and were present on the REST API endpoints so they could be fetched and accessed. However, I did not add enough unique IDs or make the structures scalable enough, which caused problems when displaying them as the app grew. Elements with varying properties sometimes caused undefined errors during rendering. Handling asynchronous fetches required careful management of loading states and conditional checks.</p>
+                 
+                 <h3>- Firestore Data Structure & Async Challenges -</h3>
+                 <p>Firestore’s behavior with nested arrays and object keys created additional complexity. Keys are automatically sorted, and deep equality queries are unsupported, forcing me to write conversion and flattening logic to preserve the intended JSON structure. Async fetching led to initial undefined states, requiring safeguards before running array operations like .filter().</p>
+
+                 <h3>- Toggle Selection Logic -</h3>
+                 <p>Developing the toggle selection function for design system elements was particularly difficult, as it required managing nested states and ensuring consistent updates across context and local state.</p>
+
+                 <h3>- Scalability & Componentization -</h3>
+                 <p>Rendering complex design system elements demanded more reusable components. Implementing a renderItem function with type-based switching simplified the UI and made the app more scalable for future expansions.</p>
+
+                 <h3>- ADB Issues on MacOS -</h3>
+                 <p>After updating MacOS and Android Studio, ADB stopped recognizing emulators. Despite extensive troubleshooting, I switched to testing on physical devices. This highlighted platform-specific development challenges when using React Native and Expo on Apple Silicon machines.</p>
+             </section>
+         
+             <section class="personal-value">
+                 <h2>Personal Value</h2>
+
+                 <h3>- Problem Solving Abilities -</h3>
+                 <p>Overcoming React Native state issues, asynchronous data challenges, and Firestore quirks strengthened my problem-solving skills. I learned to break down complex bugs, apply systematic debugging, and implement workarounds while maintaining app stability.</p>
+
+                 <h3>- Collaboration & Communication -</h3>
+                 <p>Although primarily working solo, understanding React Context improved my ability to design systems that support team development. Clear and structured state management facilitates collaborative coding and reduces potential conflicts.</p>
+
+                 <h3>- Continuous Learning -</h3>
+                 <p>Developing Synthesis reinforced the importance of continuous learning, from advanced React patterns to mobile-specific quirks like ADB on M2 Macs. I became more adept at anticipating pitfalls and designing resilient solutions.</p>
+             </section>
+         
+             <section class="conclusion">
+                 <h2>Conclusion</h2>
+                 <p>Synthesis represents a deep dive into complex React Native app development, showcasing the integration of context-based state management, asynchronous Firestore interactions, and scalable UI design. The challenges encountered—from state syncing and optimistic updates to nested data handling and platform-specific issues—provided invaluable experience in building robust, user-friendly mobile applications.</p>
+                 <p>Through persistent problem-solving, adaptation, and continuous learning, I strengthened both my technical and strategic development skills. This project demonstrates my capacity to tackle advanced mobile app challenges while maintaining clean, maintainable, and scalable code.</p>
+             </section>
+            </div>
+          </div>  
+
+           <div class="sig-cont">
+            <img class="frasr-logo" src="../content/white-SIGNATURE.png" alt="" />
+    
+          </div>
+        </div>
+    </section>
+</main> 
+
+    <footer class="footer alt-fade-bkgd">
+        <div class="container">
+            <a class="footer__logo" href="/">
+                <img src="../content/white-SIGNATURE.png" alt="signature logo" class="footer__icon">
+            </a>
+    
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li><a class="footer__link" href="../index.html">About</a></li>
+                    <li><a class="footer__link" href="../portfolio.html">Portfolio</a></li>
+                    <li><a class="footer__link" href="../contact.html">Contact</a></li>
+                     <li><a class="footer__link" href="../resume.html">Resume</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer-small-links">
+                <small class="footer__copyright">
+                    &copy; 2025 | Website Created By Kieran Poropat
+                </small>
+              <div class="footer__copyright2">
+                <small><a target="_blank" href="https://github.com/poro0002"><img class="small-media-logo" src="../content/github-white48.png" alt="github logo"></a></small>
+                <small><a target="_blank" href="https://www.linkedin.com/in/kieran-poropat/"><img class="small-media-logo" src="../content/In-White-48.png" alt="linkedin logo"></a></small>
+                <small><a target="_blank" href="https://dribbble.com/Kieran_"><img class="small-media-logo" src="../content/dribbble-white-logo.png" alt="dribble logo"></a></small>
+               
+              </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <a href="#page" class="to-top">To Top</a>
+    
+</body>
+</html>
